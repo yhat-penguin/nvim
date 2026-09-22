@@ -6,3 +6,8 @@
 --
 -- Or remove existing autocmds by their group name (which is prefixed with `lazyvim_` for the defaults)
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
+
+vim.api.nvim_create_user_command("CdRoot", function()
+  vim.cmd.cd(LazyVim.root())
+  vim.notify("cwd: " .. vim.fn.getcwd())
+end, { desc = "cd to LazyVim root" })
