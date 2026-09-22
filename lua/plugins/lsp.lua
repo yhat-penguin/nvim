@@ -11,7 +11,7 @@ return {
     opts = {
       completion = {
         menu = {
-          auto_show = false,
+          auto_show = true,
         },
         list = {
           selection = {
@@ -20,5 +20,9 @@ return {
         },
       },
     },
+  },
+  {
+    -- disable auto-closing of brackets, quotes, etc. — close them manually
+    { "nvim-mini/mini.pairs", enabled = false },
   },
 }
