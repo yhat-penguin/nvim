@@ -19,8 +19,11 @@ return {
                 },
                 [".databricks/bundle_config_schema.json"] = {
                   "databricks.yml",
+                  "databricks.yaml",
                   "bundles/**/*.yml",
+                  "bundles/**/*.yaml",
                   "resources/**/*.yml",
+                  "resources/**/*.yaml",
                 },
               },
             },
